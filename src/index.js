@@ -1,10 +1,13 @@
 import { StyleSheet, View } from 'react-native';
 import { Header } from './components';
+import { StartGame } from './screen';
+import colors from './constants/colors';
 
 export default function App() {
   return (
     <View style={styles.container}>
         <Header title="Welcome"/> 
+        <StartGame />
     </View>
   );
 }
@@ -12,6 +15,6 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: colors.background,
   },
 });
