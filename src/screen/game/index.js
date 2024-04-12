@@ -10,7 +10,7 @@ const generateRamdomNumber = (min, max, exclude) => {
 
     const randomNumber = Math.floor(Math.random() * (max - min) + min);
     if (randomNumber === exclude) {
-        return generateRandomNumber (min, max, exclude);
+        return generateRamdomNumber(min, max, exclude);
     } else {
         return randomNumber;
     }
